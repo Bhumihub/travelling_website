@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking Form</title>
+    <link rel="stylesheet" href="stylefour.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Train Ticket Booking Form</h1>
+        <form id="bookingForm">
+            <fieldset>
+                <legend>Travel Information</legend>
+                <label for="departureDate">Date of Departure:</label>
+                <input type="date" id="departureDate" name="departureDate" required><br><br>
+                
+                <label for="source">Source:</label>
+                <input type="text" id="source" name="source" required><br><br>
+                
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required><br><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Payment Mode</legend>
+                <label for="paymentMode">Select Payment Mode:</label>
+                <select id="paymentMode" name="paymentMode" required>
+                    <option value="">--Select Payment Mode--</option>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="debitCard">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select><br><br>
+            </fieldset>
+            
+            <button type="submit">Book Ticket</button>
+        </form>
+    </div>
+    <script src="scriptfour.js"></script>
+</body>
+</html>

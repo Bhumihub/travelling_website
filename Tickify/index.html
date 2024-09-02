@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bus Ticket Booking</h1>
+
+        <!-- Departure and Destination Information -->
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="source">Source:</label>
+                <input type="text" id="source" name="source" placeholder="Enter Source" required>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter Destination" required>
+            </div>
+
+            <button type="button" id="search-btn">Search Bus Availability</button>
+        </form>
+
+        <!-- Seat Selection -->
+        <div id="seat-selection" class="hidden">
+            <h2>Select Your Seat</h2>
+            <div class="form-group">
+                <label for="seat-number">Seat Number:</label>
+                <input type="text" id="seat-number" name="seat-number" placeholder="Enter Seat Number" required>
+            </div>
+            <button type="button" id="proceed-btn">Proceed to Personal Information</button>
+        </div>
+
+        <!-- Personal Information -->
+        <div id="personal-info" class="hidden">
+            <h2>Personal Information</h2>
+            <form>
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Enter Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                </div>
+
+                <button type="button" id="payment-btn">Proceed to Payment</button>
+            </form>
+        </div>
+
+        <!-- Payment Information -->
+        <div id="payment-info" class="hidden">
+            <h2>Payment Information</h2>
+            <form>
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Enter Card Number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="month" id="expiry-date" name="expiry-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+                </div>
+
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
